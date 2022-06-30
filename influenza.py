@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
 # Influenza Test
@@ -30,12 +29,6 @@ st.write(df)
 iris = pd.read_csv('https://raw.githubusercontent.com/HaiFazwin/stuntedkid/main/Influenza%20-%20Sheet1%20(1).csv')
 X = iris.drop('Result',axis=1)
 Y = iris.Result
-
-clf = RandomForestClassifier()
-clf.fit(X, Y)
-
-prediction = clf.predict(df)
-prediction_proba = clf.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
 st.write(['Positive','Negatif'])
