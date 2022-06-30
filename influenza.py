@@ -13,7 +13,7 @@ st.sidebar.header('How are you?')
 def user_input_features():
     Temperature = st.sidebar.slider('Your Temperature', 35, 36, 37,38,39,40,41,42,43,44)
     Running Nose = st.sidebar.slider('Running Nose?', 1, 1)
-    cough = st.sidebar.slider('Coughing?',1, 0)
+    Cough = st.sidebar.slider('Coughing?',1, 0)
     Dizziness = st.sidebar.slider('Dizziness?', 1, 0)
     data = {'Temperature': Your Temperature,
             'Running Nose': Running Nose?,
@@ -27,7 +27,7 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-iris = pd.read_csv('https://raw.githubusercontent.com/HaiFazwin/stuntedkid/main/Influenza%20-%20Sheet1.csv')
+iris = pd.read_csv('https://raw.githubusercontent.com/HaiFazwin/stuntedkid/main/Influenza%20-%20Sheet1%20(1).csv')
 X = iris.drop('Result',axis=1)
 Y = iris.Result
 
