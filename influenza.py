@@ -11,7 +11,7 @@ st.sidebar.header('How are you?')
 
 def user_input_features():
     Temperature = st.sidebar.slider('Your Temperature', 35, 36, 37,38,39,40,41,42,43,44)
-    Running Nose = st.sidebar.slider('Running Nose?', 1, 1)
+    Running Nose = st.sidebar.slider('Running Nose?', 1, 0)
     Cough = st.sidebar.slider('Coughing?',1, 0)
     Dizziness = st.sidebar.slider('Dizziness?', 1, 0)
     data = {'Temperature': Your Temperature,
