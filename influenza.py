@@ -10,12 +10,12 @@ This app predicts the **Influenza Test** type!
 st.sidebar.header('How are you?')
 
 def user_input_features():
-    Temperature = st.sidebar.slider('Your Temperature', 35, 36, 37,38,39,40,41,42,43,44)
-    RunningNose = st.sidebar.slider('Running Nose', 1, 0)
+    Temperature = st.sidebar.slider('Temperature', 35, 36, 37,38,39,40,41,42,43,44)
+    RunningNose = st.sidebar.slider('RunningNose', 1, 0)
     Cough = st.sidebar.slider('Coughing',1, 0)
     Dizziness = st.sidebar.slider('Dizziness', 1, 0)
-    data = {'Temperature': Your Temperature,
-            'RunningNose': Running Nose,
+    data = {'Temperature': Temperature,
+            'RunningNose': RunningNose,
             'Cough': Coughing,
             'Dizziness': Dizziness}
     features = pd.DataFrame(data, index=[0])
